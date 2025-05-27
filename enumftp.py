@@ -13,12 +13,12 @@ ip = sys.argv[1]
 porta = int(sys.argv[2])
 wl = sys.argv[3]
 
-# Iniciando laco de repeticao
+# Iniciando laço de repetição
 f = open(wl)
 for user in f.readlines():
 	print("Testando o usuario:",user)
 
-# Realizando conexao
+# Realizando conexão
 	msocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 	msocket.connect((ip,porta))
 	banner = msocket.recv(1024).decode('utf-8')
