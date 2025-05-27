@@ -5,7 +5,7 @@ import re
 
 if len(sys.argv) != 4:
 	print("Enumeracao de usuarios FTP")
-	print("Modo de uso: python3 %s 172.16.1.245 2121 /usr/share/wordlists/names.txt"%(sys.argv[0]))
+	print("Modo de uso: python3 %s 127.0.0.1 2121 /usr/share/wordlists/names.txt"%(sys.argv[0]))
 	sys.exit()
 
 print("Interagindo com FTP Server")
